@@ -69,7 +69,7 @@ L2
 L2[2]
 L2[2][1]
 
-# Section 3.6
+# 是否可变
 x = 7
 y = 7
 print(id(x))
@@ -85,61 +85,50 @@ id(x)
 id(z)
 x = 9
 id(x)
-
 x1 = 7
 id(x1)
-
 s1 = 'Hello World'
 id(s1)
-
 s1 = 'Hi World'
 id(s1)
-
 s1[0]
-
 s1[0] = 'W'
-
 L2[0] = 20
-
 L2
-
 L4 = L1
-
 L4
-
 L4[2] = 'Stock D'
-
 L1
 
-# Section 3.7
+# 元组tuple
 M = ('Market', 3.0, [10, 20, 30])
-
+#若没加逗号，会理解为字符串
 t1 = ('Single')
 type(t1)
-
 t2 = ('Single',)
 type(t2)
-
+#语义明确时可省略括号
 t3 = 'x', 'y', 'z'
 t3
 type(t3)
-
+#元组类型不可变
 M[1]
 M[1] = 2.0
 
-# Section 3.8
+# 字典dict
 d1 = {'Stock A':30, 'Stock B':40}
 d1['Stock A']
 
-# Section 3.9
+# 集合set
 Winners = {'Company A','Company B'}
 type(Winners)
-
 Losers = set(['Company C', 'Company D'])
 type(Losers)
 
+#集合中的元素y故没有顺序关系，故以索引存取会报错
 Winners[0]
 
+#空集合只能用set（）函数创建，没包含任何元素的大括号表示的是空字典
 S0 = {}
 S1 = set()
 type(S0)
