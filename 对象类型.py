@@ -145,3 +145,26 @@ set(L1)
 set(L2)
 
 set(L1) == set(L2)
+
+class Asset(object):
+    pass#创建类
+asset1=Asset()
+asset1
+asset.id=001
+asset2=Asset
+asset2.price=12
+asset2.price
+
+class Asset(object):
+    """
+    Asset class with specified attributes "id" and "price".
+    """
+    
+    def __init__(self, id, price):
+        self.id = id
+        self.price = price
+        
+    def print_id(self):
+        print("The ID of the asset is: %s" %(self.id))
+        #创建类并绑定一些非填不可的属性
+
